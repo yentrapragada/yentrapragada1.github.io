@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	 </script>
+	<script>
+		$(document).ready(function() {
+
+			$(".content-box").mouseenter(function() {
+				$(".content-box").animate({
+					width: '500px',
+					height: '200px'
+				}, 1000);
+				$(".content-after").show().animate({opacity: '1'}, 3000);
+			});
+
+			$(".content-box").click(function() {
+				$(".content-box").animate({
+					width: '240px',
+					height: '60px'
+				}, 1000);
+				$(".content-after").hide().animate({opacity: '0'});
+			})
+
+
+			
+
+
+		});
+	</script>
+</head>
+<body>
+
+<div class="content-box">
+	<p class="content-before">Project Description</p>
+	<p class="content-after">Hybrid alert system developed using Spark and Storm frameworks by taking an advantage of each. Made use of Spark’s Machine Learning capability and Storm processing ability to produce best results. Kafka as producer/consumer and MongoDB for storing results implemented using with RESTful calls
+</br></br>
+	Technology Stack: Java, Scala, Storm, Kafka, Spark Zookeeper, MLLib, Android JAVA, MongoDB.
+</p>
+</div>
+
+</body>
+</html>

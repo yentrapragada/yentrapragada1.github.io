@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	 </script>
+	<script>
+		$(document).ready(function() {
+
+			$(".content-box").mouseenter(function() {
+				$(".content-box").animate({
+					width: '500px',
+					height: '200px'
+				}, 1000);
+				$(".content-after").show().animate({opacity: '1'}, 3000);
+			});
+
+			$(".content-box").click(function() {
+				$(".content-box").animate({
+					width: '240px',
+					height: '60px'
+				}, 1000);
+				$(".content-after").hide().animate({opacity: '0'});
+			})
+
+
+			
+
+
+		});
+	</script>
+</head>
+<body>
+
+<div class="content-box">
+	<p class="content-before">Project Description</p>
+	<p class="content-after">An application that logs the key strokes of the victim machine and sends it to the intruder. Snort Tool has been used to defend the attack.</br></br>
+	Technology Stack: Java, Socket Communication, File Transfer, SMTP Protocol, SNORT tool.
+</p>
+</div>
+
+</body>
+</html>

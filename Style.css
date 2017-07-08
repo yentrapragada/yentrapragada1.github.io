@@ -1,0 +1,99 @@
+body {
+	background-color:#fff5e6;
+}
+
+table, th {    
+    border: 0px solid #ddd;
+    text-align: Center;
+}
+
+table {
+border-spacing:10px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    padding: 5px;
+    font-size: 120%;
+}
+
+.divfooter {
+	padding-top:20px;
+	width:950px;
+	height:70px;
+	margin-top: 5px;
+	float: left;
+	margin-left: 100px;
+	background-color: red;
+}
+
+
+.imgcircle{
+    border-radius: 50%;
+}
+
+.divtejimg{ 
+	margin-top: 10px;
+	float:left;
+}
+
+.divcircles {
+	height:360px;
+	width:500px;
+	margin-top: 10px;
+	float:left;
+	margin-left: -105px;
+}
+
+.alink {
+    background-color: #fff5e6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+#edushow {
+	display: none;
+	float: left;
+}
+
+#expshow {
+	display: none;
+	float: left;
+}
+
+input::placeholder {
+  color: White;
+  }
+
+ textarea::placeholder {
+  color: White;
+  }
+
+
+.content-box {
+	width: 240px;
+	height: 60px;
+	border-radius: 6px;
+	background-color: blue;
+	padding: 20px;
+}
+
+.content-before {
+	font-size: 22px;
+	font-family: arial;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+
+.content-after {
+	display: none;
+	font-size: 14px;
+	font-family: arial;
+	color: #fff;
+	text-align: left;
+	line-height: 16px;
+	opacity: 0;
+}
